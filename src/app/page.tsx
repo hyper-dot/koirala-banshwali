@@ -1,6 +1,7 @@
 import React from "react";
 import { Exo } from "next/font/google";
 import { LottieAnimation } from "./Lottie";
+import Link from "next/link";
 
 const exo = Exo({ subsets: ["latin"] });
 
@@ -17,9 +18,13 @@ const page = () => {
             Koirala Digital Banshawali is <br /> under construction
           </h1>
           <p>We are currently working on it</p>
-          <button className="bg-blue-700 text-white w-fit px-4 py-2 rounded-xl shadow-xl">
+          <Link
+            target="_blank"
+            href="https://www.facebook.com/koiralasewasamaj.np?mibextid=LQQJ4d"
+            className="bg-blue-700 text-white w-fit px-4 py-2 rounded-xl shadow-xl"
+          >
             Learn More
-          </button>
+          </Link>
 
           <LottieAnimation />
 
@@ -29,7 +34,9 @@ const page = () => {
               className={`text-2xl ${exo.className} font-semibold flex gap-2`}
             >
               <img src="/metalogo.svg" width={50} alt="" />
-              Metalogic
+              <Link target="_blank" href="https://metalogic.com.np">
+                Metalogic
+              </Link>
             </div>
           </div>
         </div>
